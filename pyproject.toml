@@ -15,7 +15,8 @@ dependencies = [
     "joblib",
     "matplotlib",
     "seaborn",
-    "numpy"
+    "numpy",
+    "statsmodels>=0.15.0",
 ]
 
 [dependency-groups]
