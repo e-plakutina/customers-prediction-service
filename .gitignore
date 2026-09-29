@@ -1,0 +1,9 @@
+.idea/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# исходный датасет Rossmann (38 МБ) не хранится в репозитории: его скачивает python make_dataset.py
+data/raw/

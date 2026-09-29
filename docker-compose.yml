@@ -1,0 +1,9 @@
+# Запуск API: docker compose up --build  ->  http://localhost:8000/docs
+# Прогноз из CLI в том же образе: docker compose run --rm api python predict.py --date 2015-08-01 --restaurant 75
+services:
+  api:
+    build: .
+    image: customers-prediction:latest
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

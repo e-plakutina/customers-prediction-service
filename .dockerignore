@@ -1,0 +1,9 @@
+# в контекст сборки попадает только то, что нужно образу
+*
+!pyproject.toml
+!uv.lock
+!src/
+!models/
+!data/processed/
+!predict.py
+**/__pycache__
