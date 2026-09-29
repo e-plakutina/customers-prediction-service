@@ -17,6 +17,8 @@ dependencies = [
     "seaborn",
     "numpy",
     "statsmodels>=0.15.0",
+    "prophet>=1.4.0",
+    "lightgbm>=4.7.0",
 ]
 
 [dependency-groups]
