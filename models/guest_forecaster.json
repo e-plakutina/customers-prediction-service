@@ -1,0 +1,91 @@
+{
+  "trained_at": "2026-09-29 16:13:12",
+  "git_commit": "3c59ce6+изменения",
+  "train_end": "2015-06-19",
+  "features": [
+    "Promo",
+    "level_age",
+    "lag_filled",
+    "lag_filled_weeks",
+    "lag_median",
+    "rel_364",
+    "lag_7",
+    "lag_14",
+    "lag_21",
+    "lag_28",
+    "promo_lag_7",
+    "promo_lag_14",
+    "promo_lag_21",
+    "promo_lag_28",
+    "DayOfWeek",
+    "month",
+    "segment",
+    "next_holiday",
+    "prev_holiday",
+    "easter_day",
+    "christmas_day",
+    "carnival_day",
+    "days_since_reopen",
+    "days_to_long_closure",
+    "day_of_month",
+    "SchoolHoliday",
+    "Assortment",
+    "competition_open",
+    "competition_distance_log",
+    "store_id"
+  ],
+  "params": {
+    "num_leaves": 63,
+    "min_child_samples": 200,
+    "n_estimators": 150
+  },
+  "segment_models": [
+    "high_check"
+  ],
+  "folds_mape": {
+    "зима": 12.873,
+    "весна": 6.654,
+    "лето": 6.322,
+    "среднее": 8.616
+  },
+  "holdout": {
+    "lag_7": {
+      "MAE": 131.407,
+      "MAPE, %": 16.765,
+      "WAPE, %": 16.038
+    },
+    "lag_14": {
+      "MAE": 70.132,
+      "MAPE, %": 8.665,
+      "WAPE, %": 8.559
+    },
+    "median_7_28": {
+      "MAE": 81.57,
+      "MAPE, %": 10.524,
+      "WAPE, %": 9.955
+    },
+    "LightGBM": {
+      "MAE": 50.384,
+      "MAPE, %": 6.177,
+      "WAPE, %": 6.149
+    }
+  },
+  "business": {
+    "гостей в день, в среднем": 819.36,
+    "ошибка в день, медиана": 34.58,
+    "ошибка в день, 90% дней не больше": 112.01,
+    "дней с ошибкой до 5%, %": 48.84,
+    "дней с ошибкой больше 10%, %": 18.91,
+    "дней с ошибкой больше 20%, %": 2.04,
+    "ошибка недельной суммы магазина, медиана, %": 2.92,
+    "ошибка недельной суммы магазина, 90% недель не больше, %": 7.28,
+    "смещение (прогноз - факт) от суммы факта, %": -0.58
+  },
+  "versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0"
+  }
+}

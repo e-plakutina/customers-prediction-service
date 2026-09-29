@@ -8,22 +8,29 @@ dependencies = [
     "fastapi",
     "uvicorn",
     "pydantic",
-    "pydantic-settings",
-    "psycopg[binary]",
     "pandas",
     "scikit-learn",
     "joblib",
-    "matplotlib",
-    "seaborn",
     "numpy",
-    "statsmodels>=0.15.0",
-    "prophet>=1.4.0",
     "lightgbm>=4.7.0",
 ]
 
 [dependency-groups]
+data = [
+    "kagglehub>=1.0.2",
+]
 dev = [
-    "pytest"
+    "httpx2>=2.13.1",
+    "pytest",
+]
+notebooks = [
+    "ipykernel>=7.3.0",
+    "jupyterlab>=4.6.4",
+    "matplotlib>=3.11.2",
+    "nbclient>=0.11.0",
+    "nbformat>=5.11.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.15.0",
 ]
 
 [build-system]
